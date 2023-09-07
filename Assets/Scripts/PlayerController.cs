@@ -82,12 +82,17 @@ public class PlayerController : MonoBehaviour
         WaterCheck();
         IsGround();
         TryJump();
+        TryRun();
+       
+       
         if(GameManager.isWater)
         {
             TryRun();
         }
         TryCrrouch();
         Move();
+        CameraRotation();
+        CharacterRotation();
         if(!Inventory.inventoryActivated)
         {
             CameraRotation();
